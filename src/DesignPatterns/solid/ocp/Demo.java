@@ -1,6 +1,5 @@
 package DesignPatterns.solid.ocp;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class Demo {
 
 		ProductFilter pf = new ProductFilter();
 		System.out.println("Green products: ");
-		pf.filterByColor(products, Color.GREEN)
+		pf.filter(products, new ColorSpecification(Color.GREEN))
 			.forEach(p -> System.out.println("- " + p.getName() + " is green"));
 
 	}
