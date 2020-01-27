@@ -38,4 +38,8 @@ public class Rectangle {
 	public int getArea() {
 		return width*height;
 	}
+
+	public boolean isSquare() {
+		return width == height;
+	}
 }

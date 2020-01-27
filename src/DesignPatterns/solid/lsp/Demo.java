@@ -11,8 +11,7 @@ public class Demo {
 		Rectangle rc = new Rectangle(2, 3);
 		useIt(rc);
 
-		Square sq = new Square();
-		sq.setWidth(5);
+		Rectangle sq = RectangleFactory.newSquare(5);
 		useIt(sq);
 	}
 }
